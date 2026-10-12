@@ -1,10 +1,10 @@
-# 🚀 Learnitics — Mastery-Based Learning Management System (LMS)
+#  Learnitics — Mastery-Based Learning Management System (LMS)
 
 > **Learnitics** is an adaptive, mastery-driven learning platform engineered to replace passive education with true competency verification. Students only unlock subsequent modules once they achieve **$\ge 80\%$** on module checkpoint assessments. Features comprehensive instructor telemetry, miss-rate question heatmaps, institutional analytics, gamified badges, and **PWA Offline Mode with IndexedDB sync**.
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
 1. [Architectural Overview](#-architectural-overview)
 2. [Prerequisites & Environment Setup](#-prerequisites--environment-setup)
@@ -18,7 +18,7 @@
 
 ---
 
-## 🏛️ Architectural Overview
+##  Architectural Overview
 
 Learnitics is built on a decoupled, production-grade MERN architecture:
 
@@ -44,7 +44,7 @@ Learnitics Architecture
 
 ---
 
-## ⚙️ Prerequisites & Environment Setup
+##  Prerequisites & Environment Setup
 
 - **Node.js**: v18.0.0 or later (Tested on Node v25.9.0)
 - **npm**: v9.0.0 or later
@@ -65,7 +65,7 @@ CLIENT_URL=http://localhost:5173
 
 ---
 
-## 🏃 Quick Start Guide
+##  Quick Start Guide
 
 ### 1. Install Dependencies
 
@@ -111,7 +111,7 @@ Open your browser to `http://localhost:5173`.
 
 ---
 
-## 🔑 Demo Accounts & Credentials
+##  Demo Accounts & Credentials
 
 The database seed provides ready-to-test role-based credentials. All passwords are encrypted with bcrypt (10 rounds):
 
@@ -126,7 +126,7 @@ The database seed provides ready-to-test role-based credentials. All passwords a
 
 ---
 
-## 🌟 Complete Feature Matrix
+##  Complete Feature Matrix
 
 ### Stage 1 — Database Schema & Data Models
 - 14 complete Mongoose models: `User`, `UserProfile`, `Course`, `Module`, `CourseEnrollment`, `Lesson`, `LessonProgress`, `Quiz`, `Question`, `AnswerOption`, `QuizAttempt`, `AttemptAnswer`, `Achievement`, `UserAchievement`.
@@ -161,14 +161,14 @@ The database seed provides ready-to-test role-based credentials. All passwords a
 
 ### Stage 7 — Student Experience
 - Student Dashboard featuring:
-  - `🔥 X Day Streak` badge
+  - ` X Day Streak` badge
   - Four color-coded stat cards:
     - 📘 **Active Courses** (Blue)
     - 📗 **Average Progress** (Green)
     - 📙 **Completed Courses** (Orange)
     - 📕 **Study Streak** (Red)
   - Learning goals with per-course progress bars.
-- Course Overview with 🔒 locked module indicators, video/text lesson reader, "Mark Complete", and offline study pack downloader.
+- Course Overview with  locked module indicators, video/text lesson reader, "Mark Complete", and offline study pack downloader.
 - Interactive step-by-step Quiz Engine with 80% threshold Pass/Fail banner and remediation feedback.
 - Achievements Page with earned vs. greyed-out locked badges.
 
@@ -199,7 +199,7 @@ The database seed provides ready-to-test role-based credentials. All passwords a
 
 ---
 
-## 🔒 Mastery Progression & Security Rules
+##  Mastery Progression & Security Rules
 
 1. **The 80% Mastery Rule**:
    - Every module ends in a checkpoint quiz.
@@ -212,7 +212,7 @@ The database seed provides ready-to-test role-based credentials. All passwords a
 
 ---
 
-## 📶 PWA Offline Engine & Sync Protocol
+##  PWA Offline Engine & Sync Protocol
 
 When a student goes offline or has an unstable connection:
 
@@ -231,7 +231,7 @@ When a student goes offline or has an unstable connection:
 
 ---
 
-## ✅ Testing & Quality Checklist
+##  Testing & Quality Checklist
 
 - [x] **Registration & Login**: Tested across `student`, `teacher`, and `admin` with auto-routing.
 - [x] **Module Locking Logic**: Verified Module 1 unlocked; Module 2 locked until Module 1 quiz passed $\ge 80\%$.
@@ -242,7 +242,7 @@ When a student goes offline or has an unstable connection:
 
 ---
 
-## 🔍 Honest Disclosure of Limitations & Future Roadmap
+##  Honest Disclosure of Limitations & Future Roadmap
 
 1. **Video Hosting**: Current video lessons utilize responsive YouTube/Vimeo embed players. Direct multi-part MP4 upload to S3/Cloudflare R2 is planned for enterprise deployments.
 2. **WebRTC Quiz Proctoring**: Current quiz engine does not enforce webcam or tab-switching detection; students are trusted under self-paced honor code.
