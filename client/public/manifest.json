@@ -1,0 +1,18 @@
+{
+  "short_name": "Learnitics",
+  "name": "Learnitics — Mastery-Based LMS",
+  "description": "Adaptive, mastery-based learning management system with offline study capabilities.",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e3a8a",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["education", "productivity"]
+}
